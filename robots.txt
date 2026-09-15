@@ -1,0 +1,14 @@
+# The site is public. Everything published here is crawlable, including the
+# localized pages, the stylesheets, scripts and images they need to render, and
+# app-ads.txt.
+#
+# ONE GROUP, ON PURPOSE. A crawler obeys only the most specific group that
+# matches it, so naming Googlebot, Google-adstxt or Mediapartners-Google here
+# would take them OUT of this group and make each a separate rule to keep
+# correct. A single wildcard group that allows everything already permits them
+# all, and the tests assert exactly that for each named crawler.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://seybakh.com/sitemap.xml
